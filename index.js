@@ -8,7 +8,7 @@ let output = [];
 input.forEach(function(obj) {
     let out = obj;
     for (let key in toExclude) {
-        delete out[key];
+        delete out[toExclude[key]];
     }
     output.push(out);
 })
